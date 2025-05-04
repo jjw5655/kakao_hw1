@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Search</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Movie Search</h1>
+  </header>
+
+  <main>
+    <div class="search-container">
+      <input type="text" placeholder="검색어를 입력하세요" id="search-input">
+      <button id="search-btn" type="button">검색</button>
+    </div>
+
+    <div id="movie-list" class="movie-list-container">
+      <!-- 여기에 JS를 통해 영화 목록이 동적으로 추가될 예정-->
+    </div>
+  </main>
+
+  <!-- 모달창(팝업)을 위한 컨테이너. -->
+  <div id="movie-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id="modal-title">영화 제목</h5>
+        <button type="button" class="close" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body">
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
